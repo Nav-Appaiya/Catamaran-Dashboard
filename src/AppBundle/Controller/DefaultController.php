@@ -13,7 +13,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('default/maps.html.twig');
+        return $this->render('default/mapbox.html.twig');
     }
 
     /**
