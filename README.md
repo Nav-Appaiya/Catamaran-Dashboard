@@ -9,4 +9,23 @@ todo list
 - Bewaren van de data in de database
 - Arduino catamaran data mag met een import in de database gezet worden, om vervolgens getoond te worden in het dashboard. 
 
+GeoJSON
+===================
+Voor het bijhouden en weergeven van de gemeten waarde van onze catamaran, gebruiken we de geoJSON format. Deze type van opslag middels JSON  geeft ons de mogelijkheid om ook properties mee te geven met de metingen. Hieronder zie je een voorbeeld van deze data format:
 
+``````
+{
+  "geometry": {
+    "coordinates": [
+      4.226339716607811,
+      51.92276177394001
+    ],
+    "type": "Point"
+  },
+  "type": "Feature",
+  "properties": {
+    "temperatuur": 9.5,
+    "pw_waarde": 8.5
+  }
+}
+``````
