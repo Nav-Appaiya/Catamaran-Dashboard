@@ -29,3 +29,7 @@ Voor het bijhouden en weergeven van de gemeten waarde van onze catamaran, gebrui
   }
 }
 ``````
+
+Onze volledige GEOJSON dataset is hier te vinden: https://gist.github.com/Nav-Appaiya/3e6f0f884f133bac35a7b05f9e6254c3
+ 
+ 
