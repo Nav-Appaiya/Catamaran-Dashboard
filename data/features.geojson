@@ -1,0 +1,110 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 11,
+        "pw_waarde": 10.5
+      },
+      "geometry": {
+        "coordinates": [
+          4.226254,
+          51.923652
+        ],
+        "type": "Point"
+      },
+      "id": "00c0a7c64ec611a59550f2a9e4b1ad62"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 9.5,
+        "pw_waarde": 8.5
+      },
+      "geometry": {
+        "coordinates": [
+          4.226339,
+          51.922761
+        ],
+        "type": "Point"
+      },
+      "id": "093daa759e540a80f79002af9aa56bab"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": "12,5",
+        "pw_waarde": 11.5
+      },
+      "geometry": {
+        "coordinates": [
+          4.226435,
+          51.923116
+        ],
+        "type": "Point"
+      },
+      "id": "17913cf81fd6bbb787582b805412aed6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 11.4,
+        "ph_waarde": 11
+      },
+      "geometry": {
+        "coordinates": [
+          4.225021,
+          51.923011
+        ],
+        "type": "Point"
+      },
+      "id": "18cde590733a2e0d8a44a8e758c3a177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 11,
+        "pw_waarde": 10
+      },
+      "geometry": {
+        "coordinates": [
+          4.224963,
+          51.923602
+        ],
+        "type": "Point"
+      },
+      "id": "1b6d237a6542b01c8aeeb8d625234e81"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 10,
+        "ph_waarde": 8.5
+      },
+      "geometry": {
+        "coordinates": [
+          4.225602,
+          51.923938
+        ],
+        "type": "Point"
+      },
+      "id": "2654be43b304ccea71879f24eca71dcf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "temperatuur": 10,
+        "pw_waarde": 9.5
+      },
+      "geometry": {
+        "coordinates": [
+          4.225659,
+          51.922653
+        ],
+        "type": "Point"
+      },
+      "id": "53a5847ce2053e6a2bbb56687b5439df"
+    }
+  ],
+  "type": "FeatureCollection"
+}
