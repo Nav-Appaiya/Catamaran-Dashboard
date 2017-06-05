@@ -52,6 +52,9 @@
         ],
         "post-update-cmd": [
             "@symfony-scripts"
+        ],
+        "compile": [
+            "bin/console assetic:dump"
         ]
     },
     "config": {
