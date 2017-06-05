@@ -54,7 +54,7 @@
             "@symfony-scripts"
         ],
         "compile": [
-            "bin/console assetic:dump"
+            "bin/console assets:install"
         ]
     },
     "config": {
