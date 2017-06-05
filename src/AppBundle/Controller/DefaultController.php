@@ -9,11 +9,11 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/", name="login")
      */
     public function indexAction(Request $request)
     {
-        return $this->render('default/mapbox.html.twig');
+        return $this->render('default/login.html.twig');
     }
 
     /**
@@ -22,5 +22,21 @@ class DefaultController extends Controller
     public function mapboxAction(Request $request)
     {
         return $this->render('default/mapbox.html.twig');
+    }
+
+    /**
+     * @Route("/verify", name="verify")
+     */
+    public function verifyAction(Request $request)
+    {
+        $username = $request->get('username');
+        $password = $request->get('password');
+
+        if($username == 'admin' && $password == 'admin'){
+            return $this->redirectToRoute('mapbox');
+        } else{
+            $this->get('session')->getFlashBag()->add('error', 'wrong username/password, please try admin/admin');
+            return $this->redirectToRoute('login');
+        }
     }
 }
