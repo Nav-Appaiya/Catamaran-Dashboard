@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
@@ -24,7 +25,26 @@ class DefaultController extends Controller
         return $this->render('default/mapbox.html.twig');
     }
 
+	/**
+	 * @Route("/data", name="data")
+	 */
+	public function dataAction(Request $request)
+	{
+		$finder = new Finder();
+		$finder->files()->in(__DIR__ . '/../../../data/');
+
+		foreach ($finder as $item)
+		{
+			if($item->getExtension() == 'geojson'){
+				header('Content-Type: application/json');
+				print_r($item->getContents());
+			}
+		}
+		exit;
+	}
+
     /**
+     *
      * @Route("/verify", name="verify")
      */
     public function verifyAction(Request $request)

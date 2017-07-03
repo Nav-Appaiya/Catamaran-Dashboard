@@ -6,7 +6,13 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Welcome to the catamaran dashboard</h3>
+                        <h3 class="panel-title">
+                            Welcome to the catamaran dashboard
+                            <br>
+                            <br>
+
+                            <small>Please login with admin/admin for a demo.</small>
+                        </h3>
                         {% if app.session.flashBag.has('error') %}
                             <div class="alert alert-error">
                                 {% for msg in app.session.flashBag.get('error') %}
