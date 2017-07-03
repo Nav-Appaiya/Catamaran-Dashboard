@@ -54,7 +54,7 @@
             "@symfony-scripts"
         ],
         "compile": [
-            "bin/console assets:install"
+            "bin/console assets:install --symlink --relative"
         ]
     },
     "config": {
